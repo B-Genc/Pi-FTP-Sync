@@ -31,10 +31,11 @@ else: #If there is no config, ask for info
 def genFileCache():
     cache = list(listdir(config['directory']))
     return cache
+
 def debug(text):
     if (config['debug'] == 'y'):
         print(text)
-ß
+
 def disp(text, delay=None):
     lcd.clear()
     lcd.message(text)
