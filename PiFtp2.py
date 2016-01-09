@@ -61,7 +61,7 @@ except ftplib.all_errors:
     sys.exit()
 
 localfiles = list(genFileCache()) #Declares localfiles as filelist   
-remotefiles = ftp.nlist() #Getting filelist from server  
+remotefiles = ftp.nlst() #Getting filelist from server  
 #Checking what server has more than local, and queuing to download
 downloadList = list(set(remotefiles) - set(localfiles))
 
