@@ -34,7 +34,7 @@ def genFileCache():
 def debug(text):
     if (config['debug'] == 'y'):
         print(text)
-
+ß
 def disp(text, delay=None):
     lcd.clear()
     lcd.message(text)
