@@ -3,7 +3,7 @@ import Adafruit_CharLCD as LCD
 lcd = LCD.Adafruit_CharLCD(27,22,25,24,23,18,16,2,4)
 
 #Importing other things like FTP and datetime tags
-from ftplib import FTP
+import ftplib
 from datetime import datetime
 import sys, time, json, os, os.path
 
@@ -48,7 +48,7 @@ def status(message):
 
 
 #Declaring FTP
-ftp = FTP(config['server'])
+ftp = ftplib.FTP(config['server'])
 
 try:
     ftp.login(config['username'],config['password'])
