@@ -52,8 +52,8 @@ ftp = ftplib.FTP(config['server'])
 
 try:
     ftp.login(config['username'],config['password'])
-    debug("Login Successful to " + config['server'],1)
-    disp("Connected to:\n" + config['server'])
+    debug("Login Successful to " + config['server'])
+    disp("Connected to:\n" + config['server'],1)
 except ftplib.all_errors:
     debug("Cannot connect to " + config['server'])
     disp("Connection Error\n" + config['server'],1)
