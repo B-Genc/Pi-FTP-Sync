@@ -29,7 +29,7 @@ else: #If there is no config, ask for info
 
 #Functions:
 def genFileCache():
-    cache = list(listdir(config['directory']))
+    cache = list(os.listdir(config['directory']))
     return cache
 
 def debug(text):
