@@ -53,7 +53,7 @@ try:
     ftp.login(config['username'],config['password'])
     debug("Login Successful to " + config['server'],1)
     disp("Connected to:\n" + config['server'])
-except ftplib.all_errors:
+except:
     debug("Cannot connect to " + config['server'])
     disp("Connection Error\n" + config['server'],1)
     status("Connection Error")
